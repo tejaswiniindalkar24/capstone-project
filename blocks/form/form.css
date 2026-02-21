@@ -1,6 +1,6 @@
 :root {
     --background-color-primary: #fff;
-    --label-color: #666;
+    --label-color: #000000;
     --border-color: #818a91;
     --form-error-color: #ff5f3f;
     --button-primary-color: #5F8DDA;
@@ -801,4 +801,22 @@ main div.form-wrapper {
 /* Expand height for multi-select dropdowns (array types) */
 main .form form select[multiple] {
     height: calc(42px + 50px);
+}
+
+
+.field-header-panel{
+    background-color: #004b8d;
+}
+
+.field-footer-panel{
+    background-color: #004b8d;
+}
+
+
+
+   
+.field-footer-text p {
+  color: #fff !important;
+  font-size: 14px !important;
+    text-align: center; 
 }
