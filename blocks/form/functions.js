@@ -42,5 +42,38 @@ function days(endDate, startDate) {
   return Math.floor(diffInMs / (1000 * 60 * 60 * 24));
 }
 
+function maskMobileNumber(mobileNumber) {
+if (!mobileNumber) {
+return '';
+}
+const value = mobileNumber.toString();
+// Mask first 5 digits and keep the rest
+return ` ${'*'.repeat(5)}${value.substring(5)}`;
+}
+
+
+
+function startOtpTimer(duration = 60) {
+  let timeLeft = duration;
+
+  const timerDisplay = document.getElementById('otp-timer');
+  const resendBtn = document.getElementById('resend-btn');
+
+  resendBtn.disabled = true; 
+
+  const timer = setInterval(() => {
+    timerDisplay.textContent = `Resend OTP in: ${timeLeft} secs`;
+
+    if (timeLeft <= 0) {
+      clearInterval(timer);
+      timerDisplay.textContent = "You can resend OTP now";
+      resendBtn.disabled = false;
+    }
+
+    timeLeft--;
+  }, 1000);
+}
+
+
 // eslint-disable-next-line import/prefer-default-export
-export { getFullName, days, submitFormArrayToString };
+export { getFullName, days, submitFormArrayToString, maskMobileNumber, startOtpTimer };
