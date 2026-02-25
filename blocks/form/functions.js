@@ -53,27 +53,28 @@ return ` ${'*'.repeat(5)}${value.substring(5)}`;
 
 
 
-function startOtpTimer(duration = 60) {
-  let timeLeft = duration;
+function startOtpTimer(duration) {
+  setTimeout(() => {
+    let timeLeft = duration;
+    const timerDisplay = document.getElementById("otp-timer");
+    const resendBtn = document.getElementById("resend-btn");
 
-  const timerDisplay = document.getElementById('otp-timer');
-  const resendBtn = document.getElementById('resend-btn');
+    if (!timerDisplay || !resendBtn) return;
+    resendBtn.disabled = true;
 
-  resendBtn.disabled = true; 
-
-  const timer = setInterval(() => {
-    timerDisplay.textContent = `Resend OTP in: ${timeLeft} secs`;
-
-    if (timeLeft <= 0) {
-      clearInterval(timer);
-      timerDisplay.textContent = "You can resend OTP now";
-      resendBtn.disabled = false;
-    }
-
-    timeLeft--;
-  }, 1000);
+    const timer = setInterval(() => {
+      timerDisplay.textContent = "Resent OTP in {timeLeft} sec";
+      if (timeLeft <= 0) {
+        clearInterval(timer);
+        timerDisplay.textContent = "You can resend OTP now";
+        resendBtn.disabled = false;
+      }
+      timeLeft--;
+    }, 1000);
+  }, 300);
 }
 
+ 
 
 // eslint-disable-next-line import/prefer-default-export
 export { getFullName, days, submitFormArrayToString, maskMobileNumber, startOtpTimer };
