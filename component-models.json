@@ -136,7 +136,11 @@
           {
             "name": "Highlight",
             "value": "highlight"
-          }
+          },
+          {
+              "name": "OTP Fragment",
+              "value": "otp-fragment"
+            }
         ]
       }
     ]
