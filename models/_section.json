@@ -37,6 +37,10 @@
             {
               "name": "OTP Fragment",
               "value": "otp-fragment"
+            },
+            {
+              "name": "Thankyou Fragment",
+              "value": "thankyou-fragment"
             }
           ]
         }
