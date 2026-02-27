@@ -838,12 +838,28 @@ main .form form select[multiple] {
     text-align: center;
 }
 
-.otp-fragment .field-login-panel {
-    font-size: 15px;
-    color: #842029 !important;
+.otp-fragment .field-mobile-number > input{
+    border-radius: 0 14px 14px 0;
+    position: relative;
+    top: -1px;  
 }
-.otp-fragment .field-wrapper > input {
+.otp-fragment .field-prefix > select{
+    border-radius: 14px 0 0 14px;
+    position: relative;
+    right: -25px;
+    border-right: none;
+    top: -1px;
+}
+  .otp-fragment.field-mobile-number.field-description.field-mobile-number  p {
+    font-size: 15px;
+ }
+
+
+.otp-fragment .field-pancard-number > input ,
+.otp-fragment .field-date-of-birth > input{
     border-radius: 14px;
+    position: relative;
+    top: -8px;
 }
 
 .otp-fragment .field-viewloaneligibility-button button,
@@ -888,6 +904,7 @@ main .form form select[multiple] {
     margin-top: 12px;
     display: inline-block;
     line-height: 1.4;
+    font-size: 14px;
 }
 
 .otp-fragment.field-checkbox-group .field-label {
@@ -1060,3 +1077,102 @@ main .form form select[multiple] {
     color: #ffffff;
     width: 15rem;
 }
+
+/* Offer Page */
+
+.thankyou-fragment .field-kyc-verification-note {
+    background-color:  #fef8e6 !important;
+    border: 1px solid #E8A652;
+        padding: 1px 14px;
+    border-radius: 31px;
+       display: inline-block;
+    line-height: 1.4;
+
+}
+
+.thankyou-fragment .field-application-number-panel .field-loan-application-number-label  {
+    height: 30px!important;
+    width: 14rem!important;
+    margin-left: 1rem!important;
+    position: relative;
+    left: -186px!important;
+   
+}
+
+.thankyou-fragment .field-application-number-panel .field-loan-application-number input{
+    position: relative;
+    left: 6rem;
+    top: -5rem;
+   border: none !important; 
+    background: transparent;
+    outline: none !important;
+     font-weight: bold;
+    color: black;
+    font-size: 32px;
+}
+   .thankyou-fragment .field-application-number-panel .field-contact-note{
+   position: relative;
+    top: -5rem;
+    width: 22rem;
+}
+ 
+    .thankyou-fragment .field-application-number-panel {
+    border-bottom: 3px dotted #818a91;
+    height: 12rem;
+   
+}
+
+  .thankyou-fragment .field-thank-you-details .field-xpress-loan-summary-label p {
+      font-weight: bold;
+    color: black;
+    font-size: 18px;
+
+  }
+
+  .thankyou-fragment .field-thank-you-details .field-emiamount {
+    border-left: 4px solid #9db6f9 !important;
+    height: 62px;
+    margin-left: 20px;
+    margin-top: 22px;
+}
+
+.thankyou-fragment .field-thank-you-details .field-emiamount  input {
+    border: none !important;
+    background: transparent;
+    outline: none !important;
+    position: relative;
+    right: -5px;
+    top: -7px;
+    font-weight: bold;
+    font-size: 22px;
+    color: black;
+}
+
+.thankyou-fragment .field-thank-you-details .field-emiamount  label {
+    position: relative;
+    right: -10px;
+}
+
+.thankyou-fragment .field-thank-you-details .field-loan-disbursal-note p p {
+    background-color: #d3dbf6;
+    color: #748adf;
+    border-radius: 11px;
+    padding: 11px;
+    font-size: 19px;
+
+}
+
+.thankyou-fragment .field-thank-you-details .field-download-app-note p p{
+   color: black;
+    font-size: 16px;
+}
+
+
+
+.thankyou-fragment .field-thank-you-details .field-download-panel legend{
+    color: black;
+    font-weight: bold;
+}
+
+
+  
