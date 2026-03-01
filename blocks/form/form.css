@@ -823,9 +823,16 @@ main .form form select[multiple] {
 .field-header-panel {
     background-color: #09183c;
 }
-.field-header-panel.field-designer {
-    right: -8rem;
+
+.field-header-panel .field-header-logo{
     position: relative;
+    bottom: -10px;
+    left: 74px;
+    width: 127px;
+}
+.field-header-panel .field-designer {
+    position: relative;
+    right: -206px;
 }
 
 .field-footer-panel {
@@ -850,8 +857,9 @@ main .form form select[multiple] {
     border-right: none;
     top: -1px;
 }
-  .otp-fragment.field-mobile-number.field-description.field-mobile-number  p {
-    font-size: 15px;
+
+.otp-fragment .field-mobile-number p {
+    font-size: 15px !important;
  }
 
 
@@ -912,6 +920,18 @@ main .form form select[multiple] {
     position: relative;
 }
 
+.otp-fragment .field-otp-panel .field-edit-mobile-number-button button{
+   background: none;
+    color:#1A4DFF;
+    margin-left: -12%;
+    border:none;
+    padding:0px;
+    position: relative;
+    top: -58px;
+    left: -89px;
+
+}
+
 /* Offer Page */
 
 .field-offer-display-panel {
@@ -929,6 +949,9 @@ main .form form select[multiple] {
     border: none !important;
     background-color: #e9fbff;
     outline: none !important;
+    position: relative;
+    right: -18px;
+
 }
 
 .field-offer-display-panel .field-offer-display-text {
