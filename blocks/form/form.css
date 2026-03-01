@@ -921,8 +921,9 @@ main .form form select[multiple] {
 }
 
 .otp-fragment .field-otp-panel .field-edit-mobile-number-button button{
-   background: none;
+   background: transparent;
     color:#1A4DFF;
+    box-shadow: none;
     margin-left: -12%;
     border:none;
     padding:0px;
@@ -984,12 +985,14 @@ main .form form select[multiple] {
 
 .field-offer-panel .field-offer-range input[type="range"],
 .field-offer-panel .field-offer-range input[type="range"] {
-    background: #f5b859 !important;
+  background-image: linear-gradient(to right,
+  #F79C32 calc(100% * var(--current-steps) / var(--total-steps)), #C5C5C5 calc(100% * var(--current-steps) / var(--total-steps))) !important;
 }
 
 .field-offer-panel .field-tenure-range input[type="range"],
 .field-offer-panel .field-tenure-range input[type="range"] {
-    background: #f5b859 !important;
+    background-image: linear-gradient(to right,
+  #F79C32 calc(100% * var(--current-steps) / var(--total-steps)), #C5C5C5 calc(100% * var(--current-steps) / var(--total-steps))) !important;
 }
 
 .range-widget-wrapper .range-bubble {
@@ -1096,12 +1099,12 @@ main .form form select[multiple] {
 
 .field-confirm button {
     background-color: #2346cb !important;
-    border-radius: 12px;
-    color: #ffffff;
-    width: 15rem;
+    border-radius: 12px !important;
+    color: #ffffff !important;
+    width: 15rem !important;
 }
 
-/* Offer Page */
+/* Thank you Page */
 
 .thankyou-fragment .field-kyc-verification-note {
     background-color:  #fef8e6 !important;
