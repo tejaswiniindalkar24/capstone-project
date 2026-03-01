@@ -13,16 +13,17 @@ main .form .range-widget-wrapper.decorated input[type="range"]:focus {
     outline: none;
 }
  
-.range-widget-wrapper.decorated input[type="range"]::-webkit-slider-thumb {
+range-widget-wrapper.decorated input[type="range"]::-webkit-slider-thumb {
     appearance: none;
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background: #fff;
-    border: 3px solid var(--button-primary-color);
+    background: #1A40E8;
+    border: 3px solid #1A40E8;
     cursor: pointer;
     outline: 3px solid #fff;
 }
+ 
  
 .range-widget-wrapper.decorated input[type="range"]:focus::-webkit-slider-thumb {
     border-color: var(--button-primary-color);
