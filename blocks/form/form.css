@@ -875,8 +875,7 @@ main .form form select[multiple] {
     background-color: #2346cb !important;
     border-radius: 12px;
     color: #ffffff;
-    width: 20rem;
-    opacity: 0.45;
+    width: 20rem; 
 }
 
 .otp-fragment .field-radio-panel {
@@ -951,7 +950,8 @@ main .form form select[multiple] {
     background-color: #e9fbff;
     outline: none !important;
     position: relative;
-    right: -18px;
+    right: 98px;
+    bottom: -15px;
 
 }
 
@@ -1099,6 +1099,7 @@ main .form form select[multiple] {
     right: -10px;
 }
 
+.field-back-button button,
 .field-confirm button {
     background-color: #2346cb !important;
     border-radius: 12px !important;
