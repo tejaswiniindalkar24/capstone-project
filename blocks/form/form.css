@@ -946,7 +946,7 @@ main .form form select[multiple] {
     top: 16px;
 }
 
-.field-offer-display-panel .field-offeramount input {
+.field-offer-display-panel .field-fixedofferamount input {
     border: none !important;
     background-color: #e9fbff;
     outline: none !important;
@@ -1025,6 +1025,7 @@ main .form form select[multiple] {
 .field-card-panel .field-taxes {
     border-left: 4px solid #f79b31 !important;
     border-color: orangered;
+    padding: 5px;
 }
 
 .field-card-panel .field-offeramount input {
@@ -1035,6 +1036,7 @@ main .form form select[multiple] {
     font-size: 55px;
     color: black;
 }
+
 
 .field-card-panel .field-emiamount input,
 .field-card-panel .field-interestrate input,
