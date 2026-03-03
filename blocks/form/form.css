@@ -1158,14 +1158,14 @@ main .form form select[multiple] {
 
   }
 
-  .thankyou-fragment .field-thank-you-details .field-emiamount {
+  .thankyou-fragment .field-thank-you-details .field-offeramount {
     border-left: 4px solid #9db6f9 !important;
     height: 62px;
     margin-left: 20px;
     margin-top: 22px;
 }
 
-.thankyou-fragment .field-thank-you-details .field-emiamount  input {
+.thankyou-fragment .field-thank-you-details .field-offeramount  input {
     border: none !important;
     background: transparent;
     outline: none !important;
@@ -1177,7 +1177,7 @@ main .form form select[multiple] {
     color: black;
 }
 
-.thankyou-fragment .field-thank-you-details .field-emiamount  label {
+.thankyou-fragment .field-thank-you-details .field-offeramount  label {
     position: relative;
     right: -10px;
 }
