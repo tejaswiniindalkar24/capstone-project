@@ -426,7 +426,7 @@ main .form button {
     border: var(--form-button-border);
     padding: var(--form-button-padding);
     font-size: var(--form-button-font-size);
-    border-radius: unset;
+    border-radius: 14px;
     width: 100%;
 }
 
@@ -870,14 +870,22 @@ main .form form select[multiple] {
     top: -8px;
 }
 
-.otp-fragment .field-viewloaneligibility-button button,
-.otp-fragment .field-validate-otp button {
+ .otp-fragment .field-viewloaneligibility-button button:enabled ,
+.otp-fragment .field-validate-otp button:enabled {
     background-color: #2346cb !important;
-    border-radius: 12px;
+    border-radius: 12px !important;
     color: #ffffff;
     width: 20rem; 
 }
 
+.otp-fragment .field-viewloaneligibility-button button:disabled ,
+.otp-fragment .field-validate-otp button:disabled {
+   background-color: gray!important;            
+  color: #ffffff;                        
+  border: none;
+  border-radius: 12px !important;                                      
+  width: 20rem;    
+} 
 .otp-fragment .field-radio-panel {
     height: 5rem;
 }
