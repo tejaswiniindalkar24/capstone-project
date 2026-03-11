@@ -51,7 +51,20 @@ const value = mobileNumber.toString();
 return ` ${'*'.repeat(5)}${value.substring(5)}`;
 }
 
-
+/**
+ * Formats a numeric value as Indian Rupee (INR) currency string.
+ * @name formatINRCurrency Format Currency
+ * @param {number|string} value - numeric value to format as currency
+ * @returns {string} Formatted currency string in INR format
+ */
+function formatINRCurrency(value) {
+  return Number(value).toLocaleString('en-IN', {
+    style: 'currency',
+    currency: 'INR',
+    maximumFractionDigits: 0,
+    minimumFractionDigits: 0,
+  });
+}
 
 function startOtpTimer(duration) {
   setTimeout(() => {
@@ -77,4 +90,4 @@ function startOtpTimer(duration) {
  
 
 // eslint-disable-next-line import/prefer-default-export
-export { getFullName, days, submitFormArrayToString, maskMobileNumber, startOtpTimer };
+export { getFullName, days, submitFormArrayToString, maskMobileNumber, startOtpTimer,formatINRCurrency };
