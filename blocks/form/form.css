@@ -821,7 +821,9 @@ main .form form select[multiple] {
 }
 
 .field-header-panel {
-    background-color: #09183c;
+       background-color: #09183c;
+    position: relative;
+    width: 69rem !important;
 }
 
 .field-header-panel .field-header-logo{
@@ -844,6 +846,15 @@ main .form form select[multiple] {
     font-size: 14px !important;
     text-align: center;
 }
+
+   .field-login-fragment{ 
+    max-width: 1200px;
+    margin: -28px auto 0!important;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 24px!important;
+    box-shadow: 0 50px 18px rgba(0, 0, 0, 0.10);
+    width: 69rem!important;}
 
 .otp-fragment .field-mobile-number > input{
     border-radius: 0 14px 14px 0;
@@ -872,7 +883,7 @@ main .form form select[multiple] {
 
  .otp-fragment .field-viewloaneligibility-button button:enabled ,
 .otp-fragment .field-validate-otp button:enabled {
-    background-color: #2346cb !important;
+    background-color:rgb(163 186 250) !important;
     border-radius: 12px !important;
     color: #ffffff;
     width: 20rem; 
@@ -880,7 +891,7 @@ main .form form select[multiple] {
 
 .otp-fragment .field-viewloaneligibility-button button:disabled ,
 .otp-fragment .field-validate-otp button:disabled {
-   background-color: gray!important;            
+   background-color: rgb(108, 181, 227)!important;            
   color: #ffffff;                        
   border: none;
   border-radius: 12px !important;                                      
@@ -940,6 +951,10 @@ main .form form select[multiple] {
 
 }
 
+.otp-fragment.field-otp-text input{
+
+}
+
 /* Offer Page */
 
 .field-offer-display-panel {
@@ -958,7 +973,7 @@ main .form form select[multiple] {
     background-color: #e9fbff;
     outline: none !important;
     position: relative;
-    right: 98px;
+    right: 114px;
     bottom: -15px;
 
 }
@@ -1034,6 +1049,8 @@ main .form form select[multiple] {
     border-left: 4px solid #f79b31 !important;
     border-color: orangered;
     padding: 5px;
+    left: 33px;
+    position: relative;
 }
 
 .field-card-panel .field-offeramount input {
@@ -1041,7 +1058,7 @@ main .form form select[multiple] {
     background-color: #f9f4dc;
     outline: none !important;
     font-weight: bold;
-    font-size: 55px;
+    font-size: 38px;
     color: black;
 }
 
@@ -1052,6 +1069,7 @@ main .form form select[multiple] {
     border: none !important;
     background-color: #f9f4dc;
     outline: none !important;
+    width: 10rem;
 }
 
 .field-card-panel .field-notification-text {
@@ -1063,7 +1081,7 @@ main .form form select[multiple] {
     color: #fff !important;
     text-align: center;
     font-size: 16px !important;
-    bottom: -1rem;
+    bottom: -6px;
     position: relative;
 }
 
