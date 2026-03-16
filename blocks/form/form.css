@@ -883,7 +883,7 @@ main .form form select[multiple] {
 
  .otp-fragment .field-viewloaneligibility-button button:enabled ,
 .otp-fragment .field-validate-otp button:enabled {
-    background-color:rgb(163 186 250) !important;
+    background-color:#1A4DFF !important;
     border-radius: 12px !important;
     color: #ffffff;
     width: 20rem; 
@@ -891,7 +891,7 @@ main .form form select[multiple] {
 
 .otp-fragment .field-viewloaneligibility-button button:disabled ,
 .otp-fragment .field-validate-otp button:disabled {
-   background-color: rgb(108, 181, 227)!important;            
+   background-color: rgb(163 186 250)!important;            
   color: #ffffff;                        
   border: none;
   border-radius: 12px !important;                                      
