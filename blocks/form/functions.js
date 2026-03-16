@@ -88,76 +88,17 @@ function startOtpTimer(duration) {
 }
 
 
-function setupDobValidation() {
-    const dobInput = document.getElementById('dob');
-    const dobError = document.getElementById('dob-error'); // optional span
-    const form = document.getElementById('my-form');       // or use document.querySelector('form')
-
-    if (!dobInput) return;
-
-    // Set max to today - 18 years (prevents choosing an invalid future-young date)
-    (function setMaxDOB() {
-      const today = new Date();
-      const max = new Date(today.getFullYear() - 18, today.getMonth(), today.getDate());
-      dobInput.max = toISODate(max);
-    })();
-
-    // Helper: format date to YYYY-MM-DD for input[type=date]
-    function toISODate(d) {
-      const yyyy = d.getFullYear();
-      const mm = String(d.getMonth() + 1).padStart(2, '0');
-      const dd = String(d.getDate()).padStart(2, '0');
-      return `${yyyy}-${mm}-${dd}`;
-    }
-
-    // Core check: true if dob represents someone 18 or older
-    function is18OrOlder(value) {
-      const d = new Date(value);
-      if (Number.isNaN(d.getTime())) return false;
-      const today = new Date();
-
-      // 18th birthday = dob + 18 years (handles leap years correctly)
-      const eighteenth = new Date(d.getFullYear() + 18, d.getMonth(), d.getDate());
-      return eighteenth <= new Date(today.getFullYear(), today.getMonth(), today.getDate());
-    }
-
-    function showError(message) {
-      if (dobError) dobError.textContent = message || '';
-      // Also set the browser's validity state
-      dobInput.setCustomValidity(message || '');
-      // Optional: toggle aria-invalid for accessibility
-      dobInput.setAttribute('aria-invalid', message ? 'true' : 'false');
-    }
-
-    // Validate on change/input
-    function validateDob() {
-      const value = dobInput.value;
-      if (!value) {
-        showError('Date of birth is required.');
-        return false;
-      }
-      if (!is18OrOlder(value)) {
-        showError('You must be at least 18 years old.');
-        return false;
-      }
-      showError('');
-      return true;
-    }
-
-    // Hook up events
-    dobInput.addEventListener('change', validateDob);
-    dobInput.addEventListener('input', validateDob);
-
-    if (form) {
-      form.addEventListener('submit', (e) => {
-        if (!validateDob()) {
-          e.preventDefault();
-          dobInput.focus();
-        }
-      });
-    }
-  };
-
+function setupDobValidation(dateString) {
+  var today = new Date(),
+      birthDate = new Date(dateString),
+      age = today.getFullYear() - birthDate.getFullYear(),
+      m = today.getMonth() - birthDate.getMonth();
+  if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+      age--;
+  }
+  return age;
+}
+   
  
 
 // eslint-disable-next-line import/prefer-default-export
