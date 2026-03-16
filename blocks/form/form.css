@@ -947,7 +947,7 @@ main .form form select[multiple] {
     padding:0px;
     position: relative;
     top: -58px;
-    left: -89px;
+    left: -64px;
 
 }
 
@@ -1098,6 +1098,8 @@ main .form form select[multiple] {
     outline: none !important;
     position: relative;
     right: -10px;
+    top: -13px;
+    left: -1px;
 }
 
 .field-preview-panel .field-loan-details label {
@@ -1118,6 +1120,8 @@ main .form form select[multiple] {
     outline: none !important;
     position: relative;
     right: -10px;
+    top: -13px;
+    left: -1px;
 }
 
 .field-preview-panel .field-personal-details label {
